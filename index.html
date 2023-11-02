@@ -1,44 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mijn Schilderijen</title>
+    <title>Jouw Kunstgalerij</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #0074d9;
-            color: #fff;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 24px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-        }
+        /* Stijlen voor opmaak (CSS) kun je hier toevoegen */
     </style>
 </head>
 <body>
     <header>
-        <h1>Mijn Schilderijen</h1>
+        <h1>Welkom in mijn Kunstgalerij</h1>
     </header>
-    <div class="container">
-        <h2>Welkom op mijn testsite</h2>
-        <p>Dit is een eenvoudige testsite voor mijn schilderijen.</p>
-        <h2>Mijn Schilderijen</h2>
-        <img src="schilderij1.jpg" alt="Schilderij 1" width="300">
-        <img src="schilderij2.jpg" alt="Schilderij 2" width="300">
-        <img src="schilderij3.jpg" alt="Schilderij 3" width="300">
-    </div>
+    <nav>
+        <!-- Voeg een navigatiemenu toe indien nodig -->
+    </nav>
+    <main>
+        <section>
+            <h2>Over Mij</h2>
+            <p>Hier kun je een kort verhaaltje over jezelf plaatsen. Vertel iets over je achtergrond, je passie voor kunst, en je artistieke visie.</p>
+            <p>Je kunt deze tekst aanpassen in de HTML-code hier.</p>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p>Heb je vragen of wil je contact opnemen? Stuur me een e-mail op <a href="mailto:jouw@email.com">jouw@email.com</a>.</p>
+        </section>
+
+        <section>
+            <h2>Mijn Schilderijen</h2>
+            <p>Hieronder zie je een selectie van mijn schilderijen:</p>
+
+            <!-- Voeg hier afbeeldingen en informatie over je schilderijen toe -->
+            <!-- Voor elke schilderij, kun je onderstaande code herhalen -->
+            <div class="schilderij">
+                <img src="schilderij1.jpg" alt="Schilderij 1">
+                <h3>Schilderij 1</h3>
+                <p>Datum: [Datum]</p>
+                <p>Medium: [Medium]</p>
+                <p>Afmetingen: [Afmetingen]</p>
+                <p>Korte beschrijving: [Beschrijving]</p>
+            </div>
+
+            <!-- Herhaal dit blok voor elk schilderij -->
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Jouw Naam</p>
+    </footer>
 </body>
 </html>
