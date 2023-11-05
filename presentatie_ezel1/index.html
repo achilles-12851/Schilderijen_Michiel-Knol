@@ -49,7 +49,7 @@
         }
 
         .gallery-item {
-            text-align: left;
+            text-align: center;
             background-color: #fff;
             border: 1px solid #ddd;
             padding: 10px;
@@ -57,7 +57,7 @@
         }
 
         .gallery-item img {
-            width: 800px; /* Verkleint de afbeelding tot een breedte van 150px */
+            max-width: 100%; /* Zorgt ervoor dat de afbeelding schaalbaar is */
             height: auto;
         }
 
@@ -109,6 +109,34 @@
 
         .link-button:hover {
             background-color: #b98e68;
+        }
+
+        /* Media Queries voor verschillende schermformaten */
+        @media only screen and (max-width: 768px) {
+            header, footer {
+                text-align: left;
+                padding: 10px;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            h2 {
+                padding: 5px;
+                font-size: 1em;
+            }
+
+            .gallery-item {
+                padding: 5px;
+            }
+
+            .link-button {
+                padding: 5px 10px;
+                font-size: 0.8em;
+            }
         }
     </style>
 </head>
